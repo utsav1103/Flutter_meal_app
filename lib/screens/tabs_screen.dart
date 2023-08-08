@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../widgets/main_drawer.dart';
 import './favorites_screen.dart';
 import './categories_screen.dart';
 
@@ -9,8 +10,8 @@ class TabsScreen extends StatefulWidget {
 
 class _TabsScreenState extends State<TabsScreen> {
   final List<Widget> _pages = [
-   CategoriesScreen(),
-   FavoritesScreen(),
+    CategoriesScreen(),
+    FavoritesScreen(),
   ];
   int _slectedPageIndex = 0;
 
@@ -27,6 +28,7 @@ class _TabsScreenState extends State<TabsScreen> {
         title: Text('Meals'),
         backgroundColor: Colors.pink,
       ),
+      drawer: MainDrawer(),
       body: _pages[_slectedPageIndex],
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectPage,
