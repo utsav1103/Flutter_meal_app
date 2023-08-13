@@ -25,6 +25,7 @@ class MainDrawer extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Container(
+            
             height: 120,
             width: double.infinity,
             padding: EdgeInsets.all(20),
@@ -35,7 +36,8 @@ class MainDrawer extends StatelessWidget {
               style: TextStyle(
                   fontWeight: FontWeight.w900,
                   fontSize: 30,
-                  color: Colors.pink),
+                  color: Colors.pink,
+                  backgroundColor: Colors.yellow),
             ),
           ),
           SizedBox(
